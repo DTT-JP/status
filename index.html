@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="サービスの稼働状況をリアルタイムで確認できるステータスページ">
+  <title>Status Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <h1 class="header-title">
+          <span class="header-icon">◉</span>
+          Status Page
+        </h1>
+        <div class="header-status" id="header-status">
+          <span class="status-dot" id="global-dot"></span>
+          <span id="global-status-text">読み込み中...</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- アラート領域（オフラインサービス・アクティブインシデント） -->
+      <section class="alert-section" id="alert-section" style="display:none;">
+        <div class="alert-banner alert-offline" id="offline-alert" style="display:none;">
+          <div class="alert-icon">⚠</div>
+          <div class="alert-body">
+            <strong>現在停止中のサービス</strong>
+            <p id="offline-services-list"></p>
+          </div>
+        </div>
+        <div id="incident-alert-container"></div>
+      </section>
+
+      <!-- ステータスグループ一覧 -->
+      <section class="status-section" id="status-section">
+        <div class="loading-spinner" id="loading-spinner">
+          <div class="spinner"></div>
+          <p>ステータスを取得しています...</p>
+        </div>
+        <div id="groups-container"></div>
+      </section>
+
+      <!-- アクティブインシデント詳細 -->
+      <section class="incidents-section" id="incidents-section">
+        <h2 class="section-title">アクティブインシデント</h2>
+        <div id="incident-container">
+          <p class="no-incidents" id="no-incidents">現在進行中のインシデントはありません。</p>
+        </div>
+      </section>
+
+      <!-- 過去のインシデント履歴 -->
+      <section class="history-section" id="history-section">
+        <h2 class="section-title">過去のインシデント</h2>
+        <div id="history-container">
+          <p class="no-incidents">履歴を読み込み中...</p>
+        </div>
+      </section>
+
+      <!-- 更新情報 -->
+      <div class="update-info" id="update-info">
+        <span>最終更新: <time id="last-updated">--</time></span>
+        <span>データソース: <span id="data-source">--</span></span>
+      </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <p>Powered by Cloudflare Workers + GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

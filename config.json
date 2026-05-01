@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "group_name": "Webアプリケーション",
+      "services": [
+        { "internal_id": "web-main", "display_name": "メインサイト" },
+        { "internal_id": "web-api", "display_name": "APIサーバー" }
+      ]
+    },
+    {
+      "group_name": "インフラストラクチャ",
+      "services": [
+        { "internal_id": "server-01", "display_name": "メインサーバー" },
+        { "internal_id": "dns-internal", "display_name": "内部DNS" },
+        { "internal_id": "router-gw", "display_name": "ゲートウェイ" }
+      ]
+    }
+  ],
+  "web_targets": {
+    "web-main": "https://example.com",
+    "web-api": "https://api.example.com/health"
+  }
+}
