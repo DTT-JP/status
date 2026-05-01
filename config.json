@@ -1,23 +1,35 @@
 {
   "groups": [
     {
-      "group_name": "Webアプリケーション",
+      "group_name": "Syokathu Minecraft Server",
       "services": [
-        { "internal_id": "web-main", "display_name": "メインサイト" },
-        { "internal_id": "web-api", "display_name": "APIサーバー" }
+        { "internal_id": "mc-s-proxy-je", "display_name": "Proxy (JE)" },
+        { "internal_id": "mc-s-proxy-be", "display_name": "Proxy (BE)" },
+        { "internal_id": "mc-s-newsyokathu", "display_name": "new-syokathu Server" },
+        { "internal_id": "mc-s-create", "display_name": "create Server" },
+        { "internal_id": "mc-s-lobby", "display_name": "lobby Server" }
+
       ]
     },
     {
-      "group_name": "インフラストラクチャ",
+      "group_name": "自宅サーバー",
       "services": [
-        { "internal_id": "server-01", "display_name": "メインサーバー" },
-        { "internal_id": "dns-internal", "display_name": "内部DNS" },
-        { "internal_id": "router-gw", "display_name": "ゲートウェイ" }
+        { "internal_id": "d-svn1", "display_name": "SVn1" }
+      ]
+    },
+    {
+      "group_name": "バックアップサーバー",
+      "services": [
+        { "internal_id": "d-svn1-backup", "display_name": "SVn1バックアップ" }
+      ]
+    },
+    {
+      "group_name": "クラウドサーバー",
+      "services": [
+        { "internal_id": "o-arm-01", "display_name": "Oracle Cloud ARMインスタンス01" },
+        { "internal_id": "o-amd-01", "display_name": "Oracle Cloud AMDインスタンス01" }
       ]
     }
   ],
-  "web_targets": {
-    "web-main": "https://example.com",
-    "web-api": "https://api.example.com/health"
-  }
+  "web_targets": {}
 }
