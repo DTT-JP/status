@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-05-01T09:56:35.000Z",
+  "data": {
+    "d-svn1": [
+      1
+    ],
+    "d-svn1-backup": [
+      0
+    ],
+    "mc-s-create": [
+      0
+    ],
+    "mc-s-lobby": [
+      0
+    ],
+    "mc-s-newsyokathu": [
+      0
+    ],
+    "mc-s-proxy-be": [
+      0
+    ],
+    "mc-s-proxy-je": [
+      0
+    ],
+    "o-amd-01": [
+      1
+    ],
+    "o-arm-01": [
+      1
+    ]
+  }
+}
