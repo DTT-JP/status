@@ -13,10 +13,10 @@
 // ===========================================================================
 
 /** ① GitHub Pages の公開URL (最優先) */
-const PAGES_PUBLIC_URL = "https://username.github.io/status/";
+const PAGES_PUBLIC_URL = "https://dtt-jp.github.io/status/";
 
 /** ② raw.githubusercontent.com のURL */
-const GITHUB_RAW_URL = "https://raw.githubusercontent.com/username/status/main/";
+const GITHUB_RAW_URL = "https://raw.githubusercontent.com/DTT-JP/status/main/";
 
 /** ③ Cloudflare R2 パブリック公開URL (最終手段) */
 const R2_PUBLIC_URL = "https://status-r2.example.com/";
