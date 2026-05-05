@@ -1,6 +1,51 @@
 [
   {
     "internal_id": "d-svn1",
+    "day": "2026-05-04",
+    "sla_percentage": 100
+  },
+  {
+    "internal_id": "d-svn1-backup",
+    "day": "2026-05-04",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-create",
+    "day": "2026-05-04",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-lobby",
+    "day": "2026-05-04",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-newsyokathu",
+    "day": "2026-05-04",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-proxy-be",
+    "day": "2026-05-04",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-proxy-je",
+    "day": "2026-05-04",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "o-amd-01",
+    "day": "2026-05-04",
+    "sla_percentage": 50
+  },
+  {
+    "internal_id": "o-arm-01",
+    "day": "2026-05-04",
+    "sla_percentage": 50
+  },
+  {
+    "internal_id": "d-svn1",
     "day": "2026-05-03",
     "sla_percentage": 100
   },
