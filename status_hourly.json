@@ -1,6 +1,51 @@
 [
   {
     "internal_id": "d-svn1",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 100
+  },
+  {
+    "internal_id": "d-svn1-backup",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-create",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-lobby",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-newsyokathu",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-proxy-be",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "mc-s-proxy-je",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 0
+  },
+  {
+    "internal_id": "o-amd-01",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 50
+  },
+  {
+    "internal_id": "o-arm-01",
+    "hour": "2026-05-05 07:00:00",
+    "sla_percentage": 50
+  },
+  {
+    "internal_id": "d-svn1",
     "hour": "2026-05-05 06:00:00",
     "sla_percentage": 100
   },
